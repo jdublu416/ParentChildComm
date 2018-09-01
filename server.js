@@ -1,5 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
+var mysql      = require('mysql');
 
 // Sets up the Express App
 // =============================================================
@@ -16,6 +17,13 @@ app.use(express.static("app/public"));
 // Routes
 // =============================================================
 require("./app/routes/api-routes.js")(app);
+
+
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : 'Pirahn437'
+});
 
 // DataBase
 // =============================================================

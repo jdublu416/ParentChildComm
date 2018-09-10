@@ -16,7 +16,7 @@ app.use(express.static("app/public"));
 
 // Routes
 // =============================================================
-require("./app/routes/api-routes.js")(app);
+// require("./app/routes/api-routes.js")(app);
 
 
 var connection = mysql.createConnection({
@@ -27,7 +27,7 @@ var connection = mysql.createConnection({
 
 // DataBase
 // =============================================================
-var db = require('./models');
+// 
 
 // Starts the server to begin listening
 // =============================================================
